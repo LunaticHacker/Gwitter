@@ -25,6 +25,10 @@
       <font-awesome-icon class="icon" :icon="['fas', 'user']" />
       <p>Profile</p>
     </div>
+    <div class="item">
+      <font-awesome-icon class="icon" :icon="['fas', 'ellipsis-h']" />
+      <p>More</p>
+    </div>
   </div>
 </template>
 
