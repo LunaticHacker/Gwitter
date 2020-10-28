@@ -1,16 +1,22 @@
 <template>
   <div id="app" class="container">
-    <SideBar msg="Welcome to Your Vue.js App" />
+    <SideBar />
+    <Home />
+    <Trending />
   </div>
 </template>
 
 <script>
 import SideBar from "./components/Sidebar.vue";
+import Trending from "./components/Trending.vue";
+import Home from "./components/Home.vue";
 
 export default {
   name: "App",
   components: {
     SideBar,
+    Trending,
+    Home,
   },
 };
 </script>
