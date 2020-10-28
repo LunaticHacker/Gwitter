@@ -60,7 +60,7 @@ export default {
 }
 .item {
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1em;
   font-weight: bold;
   justify-content: left;
@@ -72,5 +72,10 @@ export default {
 p {
   justify-content: space-around;
   margin-left: 1em;
+}
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  p {
+    display: none;
+  }
 }
 </style>
