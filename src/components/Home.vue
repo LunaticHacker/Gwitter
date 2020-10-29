@@ -1,21 +1,29 @@
 <template>
   <div class="home">
-    <div class="card">
+    <div v-for="event in events" class="card" :key="event.id">
       <div class="profile-info">
-        <img src="https://placekitten.com/g/64/64" alt="A Cat" />
-        <p class="main-name">Jane Doe</p>
-        <p>@John Doe</p>
+        <img :src="event.actor.avatar_url" :alt="event.actor.display_login" />
+        <p class="main-name">{{ event.actor.login }}</p>
+        <p>@{{ event.actor.display_login }}</p>
       </div>
       <div class="gweet">
-        <p>Gwitter is Gweet</p>
+        <p>{{ event.gweet }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { getEvents } from "../functions/api.js";
 export default {
   name: "Home",
+  async created() {
+    this.events = await this.getEvents();
+  },
+  methods: { getEvents },
+  data() {
+    return { events: [] };
+  },
 };
 </script>
 
@@ -41,6 +49,7 @@ p {
 }
 p.main-name {
   font-weight: bold;
+  text-transform: capitalize;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
