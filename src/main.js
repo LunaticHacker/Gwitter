@@ -11,6 +11,10 @@ import {
   faEllipsisH,
   faList,
   faUser,
+  faComment,
+  faRetweet,
+  faHeart,
+  faShare,
 } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
@@ -24,6 +28,10 @@ library.add({
   faEllipsisH,
   faList,
   faUser,
+  faComment,
+  faRetweet,
+  faHeart,
+  faShare,
 });
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

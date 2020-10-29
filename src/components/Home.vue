@@ -9,6 +9,12 @@
       <div class="gweet">
         <p>{{ event.gweet }}</p>
       </div>
+      <div class="reactions">
+        <font-awesome-icon class="reaction" :icon="['fas', 'comment']" />
+        <font-awesome-icon class="reaction" :icon="['fas', 'retweet']" />
+        <font-awesome-icon class="reaction" :icon="['fas', 'heart']" />
+        <font-awesome-icon class="reaction" :icon="['fas', 'share']" />
+      </div>
     </div>
   </div>
 </template>
@@ -59,5 +65,13 @@ p.main-name {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 0, 0.2);
+}
+.reactions {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em;
+}
+.reaction {
+  color: gray;
 }
 </style>
