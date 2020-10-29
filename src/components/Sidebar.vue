@@ -59,13 +59,13 @@ export default {
 }
 .icon {
   margin-top: 1em;
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
 }
 .item {
   display: flex;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bold;
   justify-content: left;
   width: max-content;
@@ -77,7 +77,7 @@ p {
   justify-content: space-around;
   margin-left: 1em;
 }
-@media screen and (min-width: 0px) and (max-width: 400px) {
+@media screen and (min-width: 0px) and (max-width: 500px) {
   p {
     display: none;
   }

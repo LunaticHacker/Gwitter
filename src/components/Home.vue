@@ -4,7 +4,7 @@
       <div class="profile-info">
         <img :src="event.actor.avatar_url" :alt="event.actor.display_login" />
         <p class="main-name">{{ event.actor.login }}</p>
-        <p>@{{ event.actor.display_login }}</p>
+        <p class="username">@{{ event.actor.display_login }}</p>
       </div>
       <div class="gweet">
         <p>{{ event.gweet }}</p>
@@ -47,13 +47,13 @@ img {
   height: 64px;
   border-radius: 50%;
 }
-p {
+.gweet {
   margin-right: 1em;
   margin-left: 1em;
   font-family: "Helvetica Neue", Arial, sans-serif;
   word-break: break-all;
 }
-p.main-name {
+.main-name {
   font-weight: bold;
   text-transform: capitalize;
 }
@@ -73,5 +73,14 @@ p.main-name {
 }
 .reaction {
   color: gray;
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .username {
+    display: none;
+  }
+  img {
+    width: 32px;
+    height: 32px;
+  }
 }
 </style>

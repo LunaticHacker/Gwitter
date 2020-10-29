@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="trending">
     <input class="searchbar" type="text" placeholder="Search Gwitter" />
   </div>
 </template>
@@ -19,5 +19,10 @@ export default {
   border-radius: 13px 13px 13px 13px;
   padding: 1em;
   margin-right: 1em;
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .trending {
+    display: none;
+  }
 }
 </style>
