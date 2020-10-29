@@ -2,7 +2,10 @@
   <div class="home">
     <div v-for="event in events" class="card" :key="event.id">
       <div class="profile-info">
-        <img :src="event.actor.avatar_url" :alt="event.actor.display_login" />
+        <router-link
+          :to="{ name: 'Profile', query: { login: `${event.actor.login}` } }"
+          ><img :src="event.actor.avatar_url" :alt="event.actor.display_login"
+        /></router-link>
         <p class="main-name">{{ event.actor.login }}</p>
         <p class="username">@{{ event.actor.display_login }}</p>
       </div>
@@ -46,6 +49,9 @@ img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
+}
+img:hover {
+  cursor: pointer;
 }
 .gweet {
   margin-right: 1em;

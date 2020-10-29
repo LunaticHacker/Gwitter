@@ -5,4 +5,9 @@ async function getEvents() {
   let events = parseGweet(json);
   return events;
 }
-export { getEvents };
+async function getUser(user) {
+  let res = await fetch(`https://api.github.com/users/${user}`);
+  let json = await res.json();
+  return json;
+}
+export { getEvents, getUser };
