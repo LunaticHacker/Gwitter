@@ -59,8 +59,8 @@ export default {
 }
 .icon {
   margin-top: 1em;
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
 }
 .item {
   display: flex;
