@@ -44,7 +44,6 @@ img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 10px solid white;
 }
 .name {
   font-weight: bold;

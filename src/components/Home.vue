@@ -50,6 +50,9 @@ img {
   height: 64px;
   border-radius: 50%;
 }
+img:hover {
+  cursor: pointer;
+}
 .gweet {
   margin-right: 1em;
   margin-left: 1em;
