@@ -2,7 +2,8 @@
   <div class="home">
     <div v-for="event in events" class="card" :key="event.id">
       <div class="profile-info">
-        <router-link :to="{ name: 'Profile' }"
+        <router-link
+          :to="{ name: 'Profile', query: { login: `${event.actor.login}` } }"
           ><img :src="event.actor.avatar_url" :alt="event.actor.display_login"
         /></router-link>
         <p class="main-name">{{ event.actor.login }}</p>
