@@ -18,6 +18,10 @@
       <p>Messages</p>
     </div>
     <div class="item">
+      <font-awesome-icon class="icon" :icon="['fas', 'bookmark']" />
+      <p>Bookmarks</p>
+    </div>
+    <div class="item">
       <font-awesome-icon class="icon" :icon="['fas', 'list']" />
       <p>Lists</p>
     </div>
