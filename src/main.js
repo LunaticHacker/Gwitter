@@ -19,9 +19,9 @@ import {
   faHeart,
   faShare,
 } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faTwitter);
+library.add(faGithub);
 library.add({
   faHashtag,
   faBookmark,

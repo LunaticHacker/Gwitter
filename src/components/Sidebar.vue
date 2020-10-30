@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <font-awesome-icon class="logo" :icon="['fab', 'twitter']" />
+    <font-awesome-icon class="logo" :icon="['fab', 'github']" />
     <div class="item">
       <font-awesome-icon class="icon" :icon="['fas', 'home']" />
       <p>Home</p>
