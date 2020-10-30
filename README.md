@@ -1,6 +1,6 @@
 # Gwitter
 
-A Vue App in Pure css that explores the twitter rest api in a Twitter like UI(WIP- Active Development)
+A Vue App with Pure css that explores The Github Rest Api in a Twitter like UI(WIP- Active Development)
 
 ## Project setup
 
