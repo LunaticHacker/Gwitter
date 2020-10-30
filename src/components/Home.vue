@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <div v-if="loading" class="loader"></div>
     <div v-for="event in events" class="card" :key="event.id">
       <div class="profile-info">
         <router-link
@@ -28,10 +29,11 @@ export default {
   name: "Home",
   async created() {
     this.events = await this.getEvents();
+    this.loading = false;
   },
   methods: { getEvents },
   data() {
-    return { events: [] };
+    return { events: [], loading: true };
   },
 };
 </script>
@@ -79,6 +81,24 @@ img:hover {
 }
 .reaction {
   color: gray;
+}
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #1da1f2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  align-self: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media screen and (min-width: 0px) and (max-width: 500px) {
   .username {
