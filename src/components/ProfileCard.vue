@@ -14,6 +14,9 @@
       <div>
         <span>{{ this.user.followers }}</span> Followers
       </div>
+      <div>
+        <span>{{ this.user.public_repos }}</span> Repos
+      </div>
     </div>
   </div>
 </template>
