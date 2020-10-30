@@ -1,6 +1,8 @@
 import parseGweet from "../functions/parser.js";
-async function getEvents() {
-  let res = await fetch("https://api.github.com/events");
+async function getEvents(user) {
+  let res;
+  if (!user) res = await fetch("https://api.github.com/events");
+  else res = await fetch(`https://api.github.com/users/${user}/events`);
   let json = await res.json();
   let events = parseGweet(json);
   return events;

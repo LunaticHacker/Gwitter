@@ -27,8 +27,12 @@
 import { getEvents } from "../functions/api.js";
 export default {
   name: "Home",
+  props: {
+    login: String,
+  },
   async created() {
-    this.events = await this.getEvents();
+    console.log(this.$props.login);
+    this.events = await this.getEvents(this.$props.login);
     this.loading = false;
   },
   methods: { getEvents },

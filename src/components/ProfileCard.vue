@@ -18,11 +18,15 @@
         <span>{{ this.user.public_repos }}</span> Repos
       </div>
     </div>
+    <div>
+      <Home v-if="this.user.login" :login="this.user.login" />
+    </div>
   </div>
 </template>
 
 <script>
 import { getUser } from "../functions/api.js";
+import Home from "./Home";
 export default {
   props: {
     login: String,
@@ -31,8 +35,10 @@ export default {
     return { user: {} };
   },
   async created() {
-    this.user = await getUser(this.login);
-    console.log(this.user);
+    this.user = await getUser(this.$props.login);
+  },
+  components: {
+    Home,
   },
 };
 </script>
