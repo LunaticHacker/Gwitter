@@ -19,6 +19,20 @@ function parseGweet(events) {
         id: e.payload.id,
         gweet: `${e.payload.comment.body}`,
       });
+    } else if (e.type === "IssuesEvent") {
+      eventsArray.push({
+        actor: e.actor,
+        id: e.payload.id,
+        gweet: `${e.payload.action} issue ${e.payload.issue.title}`,
+      });
+    } else if (e.type === "PushEvent") {
+      if (e.payload.commits[0]) {
+        eventsArray.push({
+          actor: e.actor,
+          id: e.payload.id,
+          gweet: `${e.payload.commits[0].message}`,
+        });
+      }
     }
   }
   return eventsArray;
