@@ -89,7 +89,7 @@ a {
   color: inherit;
   outline: none;
 }
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0px) and (max-width: 600px) {
   p {
     display: none;
   }
