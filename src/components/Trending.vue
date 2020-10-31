@@ -1,11 +1,36 @@
 <template>
   <div class="trending">
-    <input class="searchbar" type="text" placeholder="Search Gwitter" />
+    <form v-on:submit.prevent="searchUsers">
+      <input
+        v-model="query"
+        class="searchbar"
+        type="text"
+        placeholder="Search Gwitter"
+      />
+    </form>
+    <div v-for="user in results.items" :key="user.id">
+      <router-link :to="{ name: 'Profile', query: { login: `${user.login}` } }">
+        <div class="card">
+          <img :src="user.avatar_url" :alt="user.login" />
+          <div class="name">{{ user.login }}</div>
+        </div>
+      </router-link>
+    </div>
   </div>
 </template>
 <script>
+import { search } from "../functions/api.js";
 export default {
   name: "Trending",
+  methods: {
+    searchUsers: async function () {
+      this.results = await search(this.query);
+      this.query = "";
+    },
+  },
+  data() {
+    return { query: "", results: [] };
+  },
 };
 </script>
 
@@ -19,6 +44,34 @@ export default {
   border-radius: 13px 13px 13px 13px;
   padding: 1em;
   margin-right: 1em;
+}
+.card {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0.5em;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.name {
+  display: flex;
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 1em;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit !important;
+}
+a:active {
+  color: #1da1f2 !important;
 }
 @media screen and (min-width: 0px) and (max-width: 500px) {
   .trending {
