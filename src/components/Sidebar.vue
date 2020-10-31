@@ -87,7 +87,7 @@ a {
   text-decoration: none;
 }
 .router-link-active {
-  color: #1da1f2;
+  color: inherit;
   outline: none;
 }
 @media screen and (min-width: 0px) and (max-width: 500px) {
