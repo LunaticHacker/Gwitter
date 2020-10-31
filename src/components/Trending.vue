@@ -64,7 +64,7 @@ img {
   padding: 1em;
 }
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0px) and (max-width: 600px) {
   .trending {
     display: none;
   }
