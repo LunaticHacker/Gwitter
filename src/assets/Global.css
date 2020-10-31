@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit !important;
+}
+a:active {
+  color: #1da1f2 !important;
+}
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
