@@ -1,39 +1,41 @@
 <template>
-  <div class="sidebar">
-    <font-awesome-icon class="logo" :icon="['fab', 'github']" />
-    <router-link to="/">
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <font-awesome-icon class="logo" :icon="['fab', 'github']" />
+      <router-link to="/">
+        <div class="item">
+          <font-awesome-icon class="icon" :icon="['fas', 'home']" />
+          <p>Home</p>
+        </div>
+      </router-link>
       <div class="item">
-        <font-awesome-icon class="icon" :icon="['fas', 'home']" />
-        <p>Home</p>
+        <font-awesome-icon class="icon" :icon="['fas', 'hashtag']" />
+        <p>Explore</p>
       </div>
-    </router-link>
-    <div class="item">
-      <font-awesome-icon class="icon" :icon="['fas', 'hashtag']" />
-      <p>Explore</p>
-    </div>
-    <div class="item">
-      <font-awesome-icon class="icon" :icon="['fas', 'bell']" />
-      <p>Notifications</p>
-    </div>
-    <div class="item">
-      <font-awesome-icon class="icon" :icon="['fas', 'envelope']" />
-      <p>Messages</p>
-    </div>
-    <div class="item">
-      <font-awesome-icon class="icon" :icon="['fas', 'bookmark']" />
-      <p>Bookmarks</p>
-    </div>
-    <div class="item">
-      <font-awesome-icon class="icon" :icon="['fas', 'list']" />
-      <p>Lists</p>
-    </div>
-    <div class="item">
-      <font-awesome-icon class="icon" :icon="['fas', 'user']" />
-      <p>Profile</p>
-    </div>
-    <div class="item">
-      <font-awesome-icon class="icon" :icon="['fas', 'ellipsis-h']" />
-      <p>More</p>
+      <div class="item">
+        <font-awesome-icon class="icon" :icon="['fas', 'bell']" />
+        <p>Notifications</p>
+      </div>
+      <div class="item">
+        <font-awesome-icon class="icon" :icon="['fas', 'envelope']" />
+        <p>Messages</p>
+      </div>
+      <div class="item">
+        <font-awesome-icon class="icon" :icon="['fas', 'bookmark']" />
+        <p>Bookmarks</p>
+      </div>
+      <div class="item">
+        <font-awesome-icon class="icon" :icon="['fas', 'list']" />
+        <p>Lists</p>
+      </div>
+      <div class="item">
+        <font-awesome-icon class="icon" :icon="['fas', 'user']" />
+        <p>Profile</p>
+      </div>
+      <div class="item">
+        <font-awesome-icon class="icon" :icon="['fas', 'ellipsis-h']" />
+        <p>More</p>
+      </div>
     </div>
   </div>
 </template>
@@ -49,6 +51,11 @@ export default {
 
 
 <style scoped>
+.sidebar-container {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
 .sidebar {
   display: flex;
   flex-direction: column;
