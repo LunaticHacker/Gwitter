@@ -31,7 +31,6 @@ export default {
     login: String,
   },
   async created() {
-    console.log(this.$props.login);
     this.events = await this.getEvents(this.$props.login);
     this.loading = false;
   },

@@ -1,10 +1,12 @@
 <template>
   <div class="sidebar">
     <font-awesome-icon class="logo" :icon="['fab', 'github']" />
-    <div class="item">
-      <font-awesome-icon class="icon" :icon="['fas', 'home']" />
-      <p>Home</p>
-    </div>
+    <router-link to="/">
+      <div class="item">
+        <font-awesome-icon class="icon" :icon="['fas', 'home']" />
+        <p>Home</p>
+      </div>
+    </router-link>
     <div class="item">
       <font-awesome-icon class="icon" :icon="['fas', 'hashtag']" />
       <p>Explore</p>
@@ -80,6 +82,13 @@ export default {
 p {
   justify-content: space-around;
   margin-left: 1em;
+}
+a {
+  text-decoration: none;
+}
+.router-link-active {
+  color: #1da1f2;
+  outline: none;
 }
 @media screen and (min-width: 0px) and (max-width: 500px) {
   p {
