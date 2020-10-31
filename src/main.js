@@ -5,6 +5,7 @@ import App from "./App.vue";
 import Profile from "./Profile.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import "./assets/Global.css";
 import {
   faHashtag,
   faBookmark,

@@ -61,7 +61,6 @@ img:hover {
 .gweet {
   margin-right: 1em;
   margin-left: 1em;
-  font-family: "Helvetica Neue", Arial, sans-serif;
   word-break: break-all;
 }
 .main-name {

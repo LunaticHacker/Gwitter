@@ -22,8 +22,4 @@ export default {
 </script>
 
 <style>
-.container {
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
-}
 </style>

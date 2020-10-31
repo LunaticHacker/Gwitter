@@ -47,7 +47,7 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 .sidebar {
   display: flex;
@@ -70,7 +70,6 @@ export default {
 }
 .item {
   display: flex;
-  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   justify-content: left;

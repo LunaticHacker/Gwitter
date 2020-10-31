@@ -49,7 +49,6 @@ export default {
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 0.5em;
-  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 .name {
   display: flex;
@@ -64,15 +63,7 @@ img {
   border-radius: 50%;
   padding: 1em;
 }
-a {
-  text-decoration: none;
-}
-a:visited {
-  color: inherit !important;
-}
-a:active {
-  color: #1da1f2 !important;
-}
+
 @media screen and (min-width: 0px) and (max-width: 500px) {
   .trending {
     display: none;

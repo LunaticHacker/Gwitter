@@ -47,7 +47,6 @@ export default {
 .pf-card {
   display: flex;
   flex-direction: column;
-  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 img {
   width: 120px;

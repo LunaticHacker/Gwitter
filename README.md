@@ -3,11 +3,13 @@
 A Vue App with Pure css that explores The Github Rest Api in a Twitter like UI(WIP- Active Development)
 
 ### Todo List
-- [ ] Organise the CSS (move common styles to global file)
-- [ ] Scrape Trending Developers 
+
+- [x] Organise the CSS (move common styles to global file)
+- [ ] Scrape Trending Developers
 - [ ] Display Trending Developers
 - [ ] Show List of Followers of Users
 - [ ] Show List of Repos of User
+
 ## Project setup
 
 ```
