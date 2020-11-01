@@ -6,7 +6,7 @@
 
     <p class="name">{{ this.user.name }}</p>
     <p>@{{ this.user.login }}</p>
-    <div>{{ this.user.bio }}</div>
+    <p>{{ this.user.bio }}</p>
     <div class="f-info">
       <div>
         <span>{{ this.user.following }}</span> Following
@@ -56,7 +56,12 @@ img {
 .name {
   font-weight: bold;
   font-size: 2em;
-  margin: 0;
+  margin-bottom: 0;
+  margin-left: 0.5em;
+  text-transform: capitalize;
+}
+p {
+  margin-left: 1em;
 }
 .f-info {
   display: flex;
