@@ -68,6 +68,7 @@ img:hover {
   text-transform: capitalize;
 }
 .card {
+  border-radius: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   margin: 1em;
