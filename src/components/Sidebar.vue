@@ -72,12 +72,12 @@ export default {
 }
 .icon {
   margin-top: 1em;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
 }
 .item {
   display: flex;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
   justify-content: left;
   width: max-content;
