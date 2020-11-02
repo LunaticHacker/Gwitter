@@ -28,4 +28,9 @@ async function search(query) {
   let json = await res.json();
   return json;
 }
-export { getEvents, getUser, search };
+async function getInfo(user, info) {
+  let res = await fetch(`https://api.github.com/users/${user}/${info}`);
+  let json = await res.json();
+  return json;
+}
+export { getEvents, getUser, search, getInfo };
