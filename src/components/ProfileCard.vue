@@ -12,13 +12,33 @@
     <p>{{ this.user.bio }}</p>
     <div class="f-info">
       <div>
-        <span>{{ this.user.following }}</span> Following
+        <router-link
+          :to="{
+            name: 'Info',
+            query: { login: this.user.login, tab: 'following' },
+          }"
+          ><span>{{ this.user.following }}</span> Following</router-link
+        >
       </div>
       <div>
-        <span>{{ this.user.followers }}</span> Followers
+        <router-link
+          :to="{
+            name: 'Info',
+            query: { login: this.user.login, tab: 'followers' },
+          }"
+        >
+          <span>{{ this.user.followers }}</span> Followers
+        </router-link>
       </div>
       <div>
-        <span>{{ this.user.public_repos }}</span> Repos
+        <router-link
+          :to="{
+            name: 'Info',
+            query: { login: this.user.login, tab: 'followers' },
+          }"
+        >
+          <span>{{ this.user.public_repos }}</span> Repos
+        </router-link>
       </div>
     </div>
     <div>
@@ -80,6 +100,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   margin-top: 1em;
+  cursor: pointer;
 }
 span {
   font-weight: bold;
