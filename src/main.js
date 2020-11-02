@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Main from "./Main.vue";
 import App from "./App.vue";
 import Profile from "./Profile.vue";
+import Info from "./Info.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import "./assets/Global.css";
@@ -49,6 +50,7 @@ const routes = [
     component: Profile,
     name: "Profile",
   },
+  { path: "/info", component: Info, name: "Info" },
 ];
 
 // 3. Create the router instance and pass the `routes` option
