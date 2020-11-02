@@ -56,6 +56,9 @@ const routes = [
 // keep it simple for now.
 const router = new VueRouter({
   routes, // short for `routes: routes`
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
 });
 
 new Vue({
