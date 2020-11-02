@@ -1,8 +1,11 @@
 <template>
   <div class="pf-card">
-    <div>
-      <img :src="this.user.avatar_url" alt="profile picture" />
-    </div>
+    <img
+      :src="'http://ghchart.rshah.org/' + this.user.login"
+      alt="contributions"
+      class="calender"
+    />
+    <img :src="this.user.avatar_url" alt="profile picture" class="dp" />
 
     <p class="name">{{ this.user.name }}</p>
     <p>@{{ this.user.login }}</p>
@@ -47,15 +50,24 @@ export default {
 .pf-card {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0;
 }
-img {
+.dp {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  position: relative;
+  background: white;
+  bottom: 60px;
 }
+.calender {
+  width: 100%;
+}
+
 .name {
   font-weight: bold;
   font-size: 2em;
+  margin-top: 0;
   margin-bottom: 0;
   margin-left: 0.5em;
   text-transform: capitalize;
@@ -72,5 +84,14 @@ p {
 span {
   font-weight: bold;
   font-size: 1em;
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  .dp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 30px;
+  }
 }
 </style>
