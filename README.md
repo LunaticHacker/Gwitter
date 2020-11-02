@@ -7,8 +7,8 @@ A Vue App with Pure css that explores The Github Rest Api in a Twitter like UI(W
 - [x] Organise the CSS (move common styles to global file)
 - [ ] Scrape Trending Developers
 - [ ] Display Trending Developers
-- [ ] Show List of Followers of Users
-- [ ] Show List of Repos of User
+- [x] Show List of Followers of Users
+- [x] Show List of Repos of Users
 
 ## Project setup
 
