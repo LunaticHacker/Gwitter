@@ -65,7 +65,7 @@ export default {
   height: 30px;
   border-radius: 50%;
   color: #1da1f2;
-  margin: 1em;
+  margin-bottom: 1em;
 }
 .logo:hover {
   background: lightblue;
