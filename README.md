@@ -1,6 +1,8 @@
 # Gwitter
 
-A Vue App with Pure css that explores The Github Rest Api in a Twitter like UI(WIP- Active Development)
+A Vue App with Pure css that explores The Github Rest Api in a Twitter like UI
+### [Live App](https://gwitter.netlify.app)
+Far from finished but looks decent for now :)
 
 ### Todo List
 
