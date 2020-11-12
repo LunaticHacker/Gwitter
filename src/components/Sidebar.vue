@@ -55,6 +55,7 @@ export default {
   position: sticky;
   top: 0;
   height: 100vh;
+  margin-left: 0.5em;
 }
 .sidebar {
   display: flex;
